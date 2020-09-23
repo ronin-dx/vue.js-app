@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover" />
+    <link href="/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="/css/vant.css" rel="stylesheet" type="text/css">
+    <script src="/js/rem.js"></script>
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.js"></script>
+    <script src="/js/vant.js"></script>
+    <script type="text/javascript">
+        document.write('<script type="application/javascript" src="/js/tabbar.js?v=' + Math.random() + '" ><\/script>');
+        document.write('<script type="application/javascript" src="/api/index.js?v=' + Math.random() + '" ><\/script>');
+        document.write('<script type="application/javascript" src="/js/tools.js?v=' + Math.random() + '" ><\/script>');
+        document.write('<script type="application/javascript" src="/js/cache.js?v=' + Math.random() + '" ><\/script>');
+        document.write('<script type="application/javascript" src="/js/request.js?v=' + Math.random() + '" ><\/script>');
+        document.write('<script type="application/javascript" src="/component/tabbar.js?v=' + Math.random() + '" ><\/script>');
+        document.write("<link rel='stylesheet' type='text/css' href='/css/common.css?random=" + Math.random() + "' />");
+    </script>
+    </script>
+    <title>index4</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="main">
+            index4
+            <tabbar :active="active" @tabbar="tabbarChange"></tabbar>
+        </div>
+    </div>
+</body>
+<script>
+    new Vue({
+        el: '#app',
+        data() {
+            return {
+                active: 3,
+            }
+        },
+        mounted() {
+        },
+        methods: {
+
+        }
+    })
+</script>
+
+</html>
